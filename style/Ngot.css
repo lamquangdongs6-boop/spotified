@@ -1,0 +1,90 @@
+
+
+.song-img{
+    width:48px;
+    height:48px;
+    object-fit:cover;
+    border-radius:4px;
+    margin-right:15px;
+}
+
+.song-title{
+    font-size:18px;
+    font-weight:600;
+}
+
+.table td{
+    vertical-align:middle;
+    border:none;
+    padding:14px 10px;
+}
+
+.table-hover tbody tr:hover{
+    background:#2b2b2b;
+    cursor:pointer;
+}
+
+.spotify-footer{
+    background:#121212;
+    padding:60px 40px 30px;
+    margin-top:80px;
+}
+
+.spotify-footer h5{
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spotify-footer a{
+    display:block;
+    color:#b3b3b3;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.spotify-footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.social-icon{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#292929;
+    color:#fff !important;
+    font-size:22px;
+    margin-left:10px;
+}
+
+.social-icon:hover{
+    background:#3e3e3e;
+}
+
+.spotify-footer hr{
+    border-color:#2f2f2f;
+    margin:40px 0 25px;
+}
+
+.footer-bottom{
+    color:#b3b3b3;
+    font-size:15px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-right:22px;
+    margin-bottom:12px;
+    color:#b3b3b3;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}

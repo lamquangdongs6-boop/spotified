@@ -1,0 +1,173 @@
+/* Toàn bộ trang */
+body {
+    background: #000;   /* nền đen */
+    color: #fff;        /* chữ trắng */
+    font-family: Arial, sans-serif;
+
+}
+
+/* Khung đăng nhập */
+.login-box {
+    width: 400px;
+}
+
+/* Ô nhập liệu */
+.form-control {
+    height: 50px;
+    border: 1px solid #555;
+    background: #000;   /* nền đen */
+    color: #fff;        /* chữ trắng */
+}
+
+.form-control:focus {
+    background: #000;
+    color: #fff;
+    border-color: #1ed760;
+    box-shadow: none;
+}
+
+/* Nút màu xanh */
+.btn-success {
+    background: #1ed760;
+    border: none;
+    color: #000;        /* chữ đen để nổi bật trên nền xanh */
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background: #1fdf64;
+}
+
+/* Nút viền trắng */
+.btn-outline-light {
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: #000;        /* khi hover thì chữ đen trên nền trắng */
+}
+
+.sidebar{
+    background-color: green;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.one{
+
+    height:50px;
+    width: 50px;
+}
+.two{
+    background-color: red;
+    height:50px;
+    width: 800px;
+    
+}
+.three{
+    background-color: brown;
+    height:50px;
+    width: 160px;
+    
+}
+.content{
+    background-color: cadetblue;
+    width: 100%;
+    height: 1000px;
+    display:flex;
+    justify-content: center;
+    padding-top:100px;
+
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color:chocolate ;
+}
+
+.container_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: green;
+    width: 1000px;
+    height: 300px;
+}
+h2{
+    background-color: blue;
+    width:400px ;
+    height: 100px;
+}
+.spotify-footer{
+    background:#121212;
+    padding:60px 40px 30px;
+    margin-top:80px;
+}
+
+.spotify-footer h5{
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spotify-footer a{
+    display:block;
+    color:#b3b3b3;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.spotify-footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.social-icon{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#292929;
+    color:#fff !important;
+    font-size:22px;
+    margin-left:10px;
+}
+
+.social-icon:hover{
+    background:#3e3e3e;
+}
+
+.spotify-footer hr{
+    border-color:#2f2f2f;
+    margin:40px 0 25px;
+}
+
+.footer-bottom{
+    color:#b3b3b3;
+    font-size:15px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-right:22px;
+    margin-bottom:12px;
+    color:#b3b3b3;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+

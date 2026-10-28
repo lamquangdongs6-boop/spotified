@@ -1,0 +1,537 @@
+/* =========================
+   Toàn trang
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* =========================
+   Navbar
+========================= */
+.navbar {
+  background: #000;
+}
+
+/* Ô tìm kiếm */
+.input-group-text,
+.form-control {
+  background: #2a2a2a;
+  border: none;
+  color: white;
+}
+
+.input-group-text {
+  color: #b3b3b3;
+}
+
+.form-control::placeholder {
+  color: #9f9f9f;
+}
+
+.form-control:focus {
+  background: #2a2a2a;
+  color: white;
+  box-shadow: none;
+}
+
+/* =========================
+   Sidebar
+========================= */
+.sidebar {
+  background: #121212;
+  border-radius: 15px;
+  min-height: 100%;
+}
+
+.sidebar button {
+  background: #2d2d2d;
+  border: none;
+  color: white;
+}
+
+.sidebar button:hover {
+  background: #404040;
+}
+
+/* =========================
+   Content
+========================= */
+.content {
+  background: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* =========================
+   Banner
+========================= */
+.banner {
+  height: 380px;
+  background: linear-gradient(to bottom, #555, #111);
+  display: flex;
+  align-items: end;
+  padding: 45px;
+}
+
+.banner h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.banner p {
+  margin: 0;
+}
+
+.artist-avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* =========================
+   Play button
+========================= */
+.play-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background: #1ed760;
+  color: black;
+  font-size: 32px;
+  transition: transform 0.25s;
+}
+
+.play-btn:hover {
+  transform: scale(1.08);
+}
+
+/* =========================
+   Following
+========================= */
+.follow-btn {
+  border-radius: 30px;
+  padding: 8px 22px;
+}
+
+/* =========================
+   Phần Popular
+========================= */
+.popular-section {
+  background: #121212;
+}
+
+.popular-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* =========================
+   Danh sách bài hát
+========================= */
+.song-list {
+  width: 100%;
+}
+
+/* Mỗi dòng bài hát */
+.song-row {
+  display: grid;
+  grid-template-columns: 32px 50px minmax(180px, 1fr) 180px 24px 55px;
+  align-items: center;
+  gap: 12px;
+  min-height: 70px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #b3b3b3;
+  transition: background-color 0.2s;
+}
+
+.song-row:hover {
+  background: #2a2a2a;
+}
+
+/* Số thứ tự */
+.song-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: #b3b3b3;
+}
+
+/* Ảnh bài hát */
+.song-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* Thông tin bài hát */
+.song-info {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.song-title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-artist {
+  color: #b3b3b3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Lượt nghe */
+.song-streams {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Dấu xác minh bài hát */
+.verified-song {
+  color: #1ed760;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Thời lượng */
+.song-time {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* =========================
+   Dòng đang được chọn
+========================= */
+.song-row.active-song {
+  background: #292929;
+}
+
+/* Số 4 có cùng kích thước với số khác */
+.song-row.active-song .song-number {
+  color: #b3b3b3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Tên bài hát */
+.song-row.active-song .song-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Tên nghệ sĩ */
+.song-row.active-song .song-artist {
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Lượt nghe */
+.song-row.active-song .song-streams {
+  color: #b3b3b3;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Nhãn Explicit */
+.explicit-tag {
+  display: inline-block;
+  background: #333;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+
+/* =========================
+   Footer
+========================= */
+.spotify-footer {
+  background: #121212;
+  padding: 60px 40px 30px;
+  margin-top: 80px;
+}
+
+.spotify-footer h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.spotify-footer a {
+  display: block;
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+.spotify-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Icon mạng xã hội */
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #292929;
+  color: #fff;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.social-icon:hover {
+  background: #3e3e3e;
+}
+
+/* Đường kẻ footer */
+.spotify-footer hr {
+  border-color: #2f2f2f;
+  margin: 40px 0 25px;
+}
+
+/* Phần cuối footer */
+.footer-bottom {
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin-right: 22px;
+  margin-bottom: 12px;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* =========================
+   Responsive: màn hình dưới 1200px
+========================= */
+@media (max-width: 1200px) {
+  .song-row {
+    grid-template-columns: 28px 48px minmax(120px, 1fr) 125px 22px 45px;
+    gap: 8px;
+  }
+
+  .song-streams,
+  .song-time {
+    font-size: 15px;
+  }
+
+  .song-title,
+  .song-row.active-song .song-title {
+    font-size: 16px;
+  }
+
+  .song-artist,
+  .song-row.active-song .song-artist {
+    font-size: 14px;
+  }
+
+  .song-number,
+  .song-row.active-song .song-number {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   Responsive: màn hình dưới 900px
+========================= */
+@media (max-width: 900px) {
+  .song-row {
+    grid-template-columns: 24px 45px minmax(100px, 1fr) 24px 45px;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .song-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .song-streams {
+    display: none;
+  }
+
+  .song-title,
+  .song-row.active-song .song-title {
+    font-size: 15px;
+  }
+
+  .song-artist,
+  .song-row.active-song .song-artist {
+    font-size: 13px;
+  }
+
+  .song-number,
+  .song-row.active-song .song-number {
+    font-size: 18px;
+  }
+
+  .song-time {
+    font-size: 14px;
+  }
+
+  .verified-song {
+    font-size: 16px;
+  }
+
+  .banner {
+    padding: 20px;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .artist-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .banner h1 {
+    font-size: 42px;
+  }
+
+  .spotify-footer {
+    padding: 35px 20px 25px;
+  }
+}
+
+/* =========================
+   Responsive: điện thoại
+========================= */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .mx-4 {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .banner {
+    padding: 18px;
+  }
+
+  .artist-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .banner h5 {
+    font-size: 13px;
+  }
+
+  .banner p {
+    font-size: 12px;
+  }
+
+  .banner .ms-4 {
+    margin-left: 12px !important;
+  }
+
+  .popular-section {
+    padding: 16px;
+  }
+
+  .popular-section h2 {
+    font-size: 24px;
+  }
+
+  .song-row {
+    grid-template-columns: 20px 42px minmax(0, 1fr) 42px;
+    gap: 8px;
+    min-height: 62px;
+    padding: 6px 2px;
+  }
+
+  .song-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .song-number,
+  .song-row.active-song .song-number {
+    font-size: 14px;
+  }
+
+  .song-title,
+  .song-row.active-song .song-title {
+    font-size: 14px;
+  }
+
+  .song-artist,
+  .song-row.active-song .song-artist {
+    font-size: 12px;
+  }
+
+  .song-streams,
+  .verified-song {
+    display: none;
+  }
+
+  .song-time {
+    font-size: 13px;
+  }
+
+  .more-icon {
+    display: none !important;
+  }
+}

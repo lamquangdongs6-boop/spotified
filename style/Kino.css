@@ -1,0 +1,296 @@
+/* ===== Body ===== */
+
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Navbar ===== */
+
+.navbar {
+    background: #000;
+}
+
+.input-group-text,
+.form-control {
+    background: #242424;
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #b3b3b3;
+}
+
+.form-control:focus {
+    background: #242424;
+    color: white;
+    box-shadow: none;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+    background: #181818;
+    border-radius: 12px;
+    min-height: 100%;
+}
+
+.sidebar .btn {
+    background: #2a2a2a;
+    border: none;
+}
+
+.sidebar .btn:hover {
+    background: #3a3a3a;
+}
+
+/* ===== Content ===== */
+
+.content {
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ===== Kino Banner ===== */
+
+.kino-banner{
+    height:350px;
+
+    display:flex;
+    align-items:center;
+
+    gap:35px;
+
+    padding:40px;
+
+    background:linear-gradient(
+        135deg,
+        #ad7272 0%,
+        #824949 50%,
+        #4d2727 100%
+    );
+
+    border-radius:12px 12px 0 0;
+}
+
+/* Avatar */
+
+.artist-avatar{
+    width:240px;
+    height:240px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+.artist-avatar img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+/* Nội dung banner */
+
+.banner-content{
+    color:#fff;
+}
+
+.banner-content p{
+    font-size:20px;
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.banner-content h1{
+    font-size:8rem;
+
+    font-weight:900;
+
+    line-height:.9;
+
+    margin-bottom:15px;
+}
+
+.banner-content h5{
+    font-size:2rem;
+
+    font-weight:600;
+}
+
+/* ===== Control ===== */
+
+.player-bar{
+    display:flex;
+    align-items:center;
+
+    gap:25px;
+
+    padding:25px 30px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(90,40,40,.6),
+        #181818
+    );
+}
+
+.play-btn{
+    width:72px;
+    height:72px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1ed760;
+
+    color:black;
+
+    font-size:36px;
+
+    transition:.2s;
+}
+
+.play-btn:hover{
+    transform:scale(1.05);
+}
+
+.player-bar .btn{
+    border-radius:30px;
+    padding:8px 24px;
+    font-weight:bold;
+}
+
+/* ===== Popular ===== */
+
+.popular-title{
+    padding:0 30px;
+
+    margin-top:15px;
+    margin-bottom:20px;
+
+    font-size:3rem;
+    font-weight:800;
+}
+
+/* ===== Table ===== */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table-dark {
+    --bs-table-bg: #181818;
+}
+
+.table td {
+    border: none;
+    padding: 15px 20px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.table-hover tbody tr:hover {
+    background: #2a2a2a;
+}
+
+.song-img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+/* ===== Scroll ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.spotify-footer{
+    background:#121212;
+    padding:60px 40px 30px;
+    margin-top:80px;
+}
+
+.spotify-footer h5{
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spotify-footer a{
+    display:block;
+    color:#b3b3b3;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.spotify-footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.social-icon{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#292929;
+    color:#fff !important;
+    font-size:22px;
+    margin-left:10px;
+}
+
+.social-icon:hover{
+    background:#3e3e3e;
+}
+
+.spotify-footer hr{
+    border-color:#2f2f2f;
+    margin:40px 0 25px;
+}
+
+.footer-bottom{
+    color:#b3b3b3;
+    font-size:15px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-right:22px;
+    margin-bottom:12px;
+    color:#b3b3b3;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}

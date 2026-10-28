@@ -1,0 +1,137 @@
+body{
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+.navbar{
+    background:#000;
+    height:72px;
+}
+
+.sidebar{
+    background:#121212;
+    border-radius:15px;
+    min-height:100%;
+}
+
+.content{
+    background:#121212;
+    border-radius:12px;
+    min-height:85vh;
+}
+
+.card{
+    background:#181818;
+    border:none;
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    background:#282828;
+    transform:translateY(-5px);
+}
+
+.card img{
+    border-radius:8px;
+    padding:10px;
+}
+
+.card-body p{
+    color:#b3b3b3;
+    font-size:14px;
+}
+
+.form-control{
+    background:#2a2a2a;
+    border:none;
+    color:white;
+}
+
+.form-control:focus{
+    background:#2a2a2a;
+    color:white;
+    box-shadow:none;
+}
+
+.input-group-text{
+    background:#2a2a2a;
+    border:none;
+    color:white;
+}
+
+.btn-secondary{
+    background:#2a2a2a;
+    border:none;
+}
+
+.btn-secondary:hover{
+    background:#3a3a3a;
+}
+
+.spotify-footer{
+    background:#121212;
+    padding:60px 40px 30px;
+    margin-top:80px;
+}
+
+.spotify-footer h5{
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spotify-footer a{
+    display:block;
+    color:#b3b3b3;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.spotify-footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.social-icon{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#292929;
+    color:#fff !important;
+    font-size:22px;
+    margin-left:10px;
+}
+
+.social-icon:hover{
+    background:#3e3e3e;
+}
+
+.spotify-footer hr{
+    border-color:#2f2f2f;
+    margin:40px 0 25px;
+}
+
+.footer-bottom{
+    color:#b3b3b3;
+    font-size:15px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-right:22px;
+    margin-bottom:12px;
+    color:#b3b3b3;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}

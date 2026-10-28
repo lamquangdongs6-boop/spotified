@@ -1,0 +1,386 @@
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    background: #000;
+}
+
+.input-group-text,
+.form-control {
+    background: #242424;
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #b3b3b3;
+}
+
+.form-control:focus {
+    background: #242424;
+    color: white;
+    box-shadow: none;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar {
+    background: #121212;
+    border-radius: 10px;
+    min-height: 90vh;
+}
+
+.sidebar button {
+    background: #2a2a2a;
+    border: none;
+}
+
+.sidebar button:hover {
+    background: #3a3a3a;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content {
+    background: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.artist-banner {
+    position: relative;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+}
+
+.artist-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(18, 18, 18, 1),
+            rgba(0, 0, 0, .15));
+}
+
+.artist-info {
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    z-index: 2;
+}
+
+.artist-info h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.artist-info p {
+    font-size: 1.5rem;
+}
+
+/* ===========================
+   CONTROL
+=========================== */
+
+.controls {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.play-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: #1ed760;
+    color: black;
+    font-size: 34px;
+    transition: .25s;
+}
+
+.play-btn:hover {
+    transform: scale(1.08);
+}
+
+.shuffle {
+    font-size: 34px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.shuffle:hover {
+    color: white;
+}
+
+.follow-btn {
+    border: 1px solid #888;
+    color: white;
+    background: transparent;
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.follow-btn:hover {
+    border-color: white;
+}
+
+.more {
+    font-size: 30px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table {
+    color: white;
+    margin-top: 20px;
+}
+
+.table td {
+    border: none;
+    vertical-align: middle;
+    padding: 14px;
+}
+
+.table tbody tr {
+    transition: .2s;
+}
+
+.table tbody tr:hover {
+    background: #2a2a2a;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.song-title {
+    font-weight: 600;
+}
+
+.song-stream {
+    color: #b3b3b3;
+}
+
+.song-time {
+    color: #b3b3b3;
+    text-align: right;
+}
+
+/* ===========================
+   VERIFIED
+=========================== */
+
+.verified {
+    color: #3ddc84;
+    font-size: 20px;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.section-title {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+    .artist-banner{
+        height:300px;
+    }
+
+    .artist-info h1{
+        font-size:4rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .artist-banner{
+        height:250px;
+    }
+
+    .artist-info h1{
+        font-size:3rem;
+    }
+
+    .controls{
+        gap:12px;
+        flex-wrap:wrap;
+    }
+
+    .play-btn{
+        width:60px;
+        height:60px;
+        font-size:28px;
+    }
+
+    .table td{
+        padding:10px;
+    }
+
+    .table img{
+        width:40px;
+        height:40px;
+    }
+
+}
+.banner {
+    position: relative;
+    height: 520px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+
+    background: linear-gradient(
+            to top,
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.2)
+        ),;
+
+
+    background-size: cover;
+    background-position: center 25%;
+}
+
+.banner-content{
+    position:absolute;
+    left:40px;
+    bottom:35px;
+    color:#fff;
+}
+
+.banner-content h1{
+    font-size:7rem;
+    font-weight:900;
+    line-height:1;
+    margin:10px 0;
+}
+
+.banner-content p{
+    font-size:1.05rem;
+    margin-bottom:8px;
+}
+
+.banner-content h5{
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.spotify-footer{
+    background:#121212;
+    padding:60px 40px 30px;
+    margin-top:80px;
+}
+
+.spotify-footer h5{
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spotify-footer a{
+    display:block;
+    color:#b3b3b3;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.2s;
+}
+
+.spotify-footer a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.social-icon{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#292929;
+    color:#fff !important;
+    font-size:22px;
+    margin-left:10px;
+}
+
+.social-icon:hover{
+    background:#3e3e3e;
+}
+
+.spotify-footer hr{
+    border-color:#2f2f2f;
+    margin:40px 0 25px;
+}
+
+.footer-bottom{
+    color:#b3b3b3;
+    font-size:15px;
+}
+
+.footer-links a{
+    display:inline-block;
+    margin-right:22px;
+    margin-bottom:12px;
+    color:#b3b3b3;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}

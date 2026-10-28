@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Weezer</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+
+  <body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4">
+      <a class="navbar-brand fs-2" href="index.html">
+        <i class="bi bi-spotify text-success"></i>
+      </a>
+
+      <form class="d-flex flex-grow-1 mx-4">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Bạn muốn nghe gì?"
+          />
+        </div>
+      </form>
+
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tải xuống</a></li>
+      </ul>
+    </nav>
+
+    <!-- Nội dung -->
+    <div class="container-fluid mt-2">
+      <div class="row g-3">
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+          <div class="sidebar p-3">
+            <h5 class="fw-bold">Thư viện</h5>
+            <button class="btn btn-secondary rounded-pill mt-3 w-100">
+              + Tạo Playlist
+            </button>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-9">
+          <!-- Banner nghệ sĩ -->
+          <div class="artist-banner position-relative rounded overflow-hidden">
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273345536847e60f622ee0eae96"
+              class="w-100"
+              style="height: 420px; object-fit: cover"
+            />
+            <div class="position-absolute bottom-0 start-0 p-4">
+              <p class="mb-2 fs-5">
+                <i class="bi bi-patch-check-fill text-success"></i> Do Spotify
+                xác minh
+              </p>
+              <h1 class="display-1 fw-bold">Weezer</h1>
+              <h4>23.659.484 người nghe hằng tháng</h4>
+            </div>
+          </div>
+
+          <!-- Thanh điều khiển -->
+          <div class="d-flex align-items-center gap-4 py-4">
+            <button
+              class="btn btn-success rounded-circle"
+              style="width: 72px; height: 72px"
+            >
+              <i class="bi bi-play-fill fs-2 text-dark"></i>
+            </button>
+
+            <button class="btn btn-outline-light rounded-pill px-4">
+              Đang theo dõi
+            </button>
+          </div>
+
+          <!-- Bảng phổ biến -->
+          <div class="content p-4">
+            <h2 class="mt-5 mb-4 fw-bold text-white">Phổ biến</h2>
+            <table class="table table-dark table-hover align-middle">
+              <tbody>
+                <tr>
+                  <td width="50">1</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b2731e0dc5baaabda304b0ad1815"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Island In The Sun</span>
+                    </div>
+                  </td>
+                  <td>1.146.942.220</td>
+                  <td class="text-end">3:20</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273345536847e60f622ee0eae96"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Say It Ain’t So - Original Mix</span>
+                    </div>
+                  </td>
+                  <td>712.649.819</td>
+                  <td class="text-end">4:18</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273345536847e60f622ee0eae96"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Buddy Holly</span>
+                    </div>
+                  </td>
+                  <td>624.607.403</td>
+                  <td class="text-end">2:39</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d00001e021e0dc5baaabda304b0ad1815"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Beverly Hills</span>
+                    </div>
+                  </td>
+                  <td>342.309.522</td>
+                  <td class="text-end">3:16</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273345536847e60f622ee0eae96"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Undone - The Sweater Song</span>
+                    </div>
+                  </td>
+                  <td>285.295.027</td>
+                  <td class="text-end">5:05</td>
+                </tr>
+
+                <tr>
+                  <td>6</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b2731e0dc5baaabda304b0ad1815"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Hash Pipe</span>
+                    </div>
+                  </td>
+                  <td>203.118.721</td>
+                  <td class="text-end">3:06</td>
+                </tr>
+
+                <tr>
+                  <td>7</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d00001e02f4f9accdc0fb8ddee29e32b7"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>I Just Threw Out The Love Of My Dreams</span>
+                    </div>
+                  </td>
+                  <td>147.870.637</td>
+                  <td class="text-end">2:37</td>
+                </tr>
+
+                <tr>
+                  <td>8</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273e7d13eb0e3c1032e4f8dfc93"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Go Away</span>
+                    </div>
+                  </td>
+                  <td>122.100.807</td>
+                  <td class="text-end">3:13</td>
+                </tr>
+
+                <tr>
+                  <td>9</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273f4f9accdc0fb8ddee29e32b7"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Pink Triangle</span>
+                    </div>
+                  </td>
+                  <td>78.557.850</td>
+                  <td class="text-end">3:58</td>
+                </tr>
+
+                <tr>
+                  <td>10</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273f4f9accdc0fb8ddee29e32b7"
+                        class="rounded me-3"
+                        width="48"
+                        height="48"
+                      />
+                      <span>Across The Sea</span>
+                    </div>
+                  </td>
+                  <td>33.748.530</td>
+                  <td class="text-end">4:32</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="spotify-footer mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Cột 1 -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Công ty</h5>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Việc làm</a>
+            <a href="#">For the Record</a>
+          </div>
+
+          <!-- Cột 2 -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Cộng đồng</h5>
+            <a href="#">Dành cho các Nghệ sĩ</a>
+            <a href="#">Nhà phát triển</a>
+            <a href="#">Quảng cáo</a>
+            <a href="#">Nhà đầu tư</a>
+            <a href="#">Nhà cung cấp</a>
+          </div>
+
+          <!-- Cột 3 -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Đường liên kết hữu ích</h5>
+            <a href="#">Hỗ trợ</a>
+            <a href="#">Ứng dụng Di động Miễn phí</a>
+            <a href="#">Phổ biến theo quốc gia</a>
+            <a href="#">Thêm nhạc</a>
+          </div>
+
+          <!-- Cột 4 -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Các gói của Spotify</h5>
+            <a href="#">Premium Individual</a>
+            <a href="#">Premium Student</a>
+            <a href="#">Spotify Free</a>
+          </div>
+
+          <!-- Social -->
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="#" class="social-icon">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div
+          class="footer-bottom d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <div class="footer-links">
+            <a href="#">Pháp lý</a>
+            <a href="#">Trung tâm an toàn và quyền riêng tư</a>
+            <a href="#">Chính sách quyền riêng tư</a>
+            <a href="#">Cookie</a>
+            <a href="#">Giới thiệu Quảng cáo</a>
+            <a href="#">Hỗ trợ tiếp cận</a>
+          </div>
+
+          <p class="mb-0 mt-3 mt-lg-0">© 2026 Spotify AB</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../style/script.js"></script>
+
+  </body>
+</html>
